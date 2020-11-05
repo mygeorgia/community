@@ -1,21 +1,21 @@
 # Chart Starters
 
-Fork and modify the [embeddable USEEIO widgets](https://github.com/USEPA/useeio-widgets) which use [D3.js](https://github.com/d3/d3/wiki/Gallery) as their only dependency. [View&nbsp;examples](https://model.earth/io/charts/). 
-
-
-<b>Automotive Industry input-output</b> - Sankey chart starter example using USEEIO API data from static json files:<br>
-<a href="sankey/"><img src="../../../io/overview/img/hero/sankey.png" style="width:100%; bottom:0px;"></a>
-<br>
-View <a href="sankey/">Interactive Version</a><br><br>
-
+[The embeddable USEEIO widgets](../../../io/charts/) provide mosaic heatmap and bar charts and use [D3.js](https://github.com/d3/d3/wiki/Gallery).  
+The [Environmental Impact Bubble Chart](../../../io/charts/bubble/) uses JSON files generated from the USEEIO API.  
 
 ### Sankey Charts
+
+<b>Automotive Industry input-output</b> - Sankey chart starter example using USEEIO API data from static json files:<br>
+<a href="../../../io/charts/sankey/"><img src="../../../io/charts/sankey/img/sankey.png" style="width:100%; bottom:0px;"></a>
+<br>
+View <a href="../../../io/charts/sankey/">Interactive Version</a><br><br>
+
 
 [4 Interactive Sankey diagrams made in Python with Plotly.js](https://medium.com/plotly/4-interactive-sankey-diagram-made-in-python-3057b9ee8616)
 
 [sankey-diagrams.com](http://www.sankey-diagrams.com/)  
 
-[D3.js Material Flow Sample](../../tools/#charts) - [Inflow-Outflow Sample](../../projects/#forestry)  
+[D3.js Material Flow Sample](../../tools/#charts)    
 [D3.js Sankey Diagram](https://observablehq.com/@dralla666/d3-sankey-diagram) - 
 [In Repo](d3-sankey-diagram/)  
 
@@ -35,7 +35,7 @@ View <a href="sankey/">Interactive Version</a><br><br>
 
 ### Bubble
 
-[Bubble with Regression line](bubble/)  
+[Bubble with Regression line](../../../io/charts/bubble/)  
 
 ### ThreeJS Force Graph
 

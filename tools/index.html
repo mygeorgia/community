@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>2020 Sustainable Communities - Input-Output Model</title>
+<title>2021 Sustainable Communities - Input-Output Model</title>
 <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png" />
 <link type="text/css" href="../../localsite/css/base.css" rel="stylesheet" />
 
 <script type="text/javascript" src="../../localsite/js/showdown.min.js"></script>
-<script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../localsite/js/jquery.min.js"></script>
 
 <!--script type="text/javascript" src="../js/jquery/zepto.min.js"></script--><!-- stop().animate() are needed -->
 
@@ -54,14 +54,9 @@ navigation.js has a conflict with reveal
 
   Our app will allow editors to update rows in Google sheets for COVID-19 supply lists, recycling centers and curbside pickup locations. We are partnering with the US Environmental Protection Agency and Georgia Tech to develop environmentally-enable input-output models with three Georgia Smart summer interns to prepare for a virtual fall hackathon with Code For America volunteers.
 -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
-integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-crossorigin=""/>
+<link rel="stylesheet" href="../../localsite/css/leaflet.css" />
  <!-- Resides AFTER Leaflet's CSS -->
-<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
-integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
-crossorigin=""></script>
-
+<script src="../../localsite/js/leaflet.js" id="/localsite/js/leaflet.js"></script>
 <script src="../js/d3/d3.v5.min.js"></script>
 <!--
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
@@ -73,7 +68,7 @@ crossorigin=""></script>
   <!-- https://github.com/ilyankou/Leaflet.IconMaterial -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="../../localsite/css/leaflet.icon-material.css" rel="stylesheet">
-  <script src="../js/leaflet/leaflet.icon-material.js"></script>
+  <script src="../../localsite/js/leaflet.icon-material.js" id="/localsite/js/leaflet.icon-material.js"></script>
 
   <style>
     h2 { font-size: 18px; }
@@ -142,10 +137,16 @@ crossorigin=""></script>
           <a href="https://model.earth/community/challenge/"><img src="../img/overview/banner-1.png" style="width:270px;"></a>
         </div>
 
-        <b>Circular Economies</b>
+        <b>Fostering Circular Economies</b>
         <br>
         
         <h1 class="h1-home" style="margin-bottom: 0px"><span class="siteTitleShort"></span></h1>
+        <br>
+
+        Created with the US EPA's new input-output model, the <span class="siteTitleShort"></span> website features&nbsp;maps and data visualizations  
+        that combine industry and environmental data using <a href="../../io/charts/">Embeddable&nbsp;IO&nbsp;Widgets</a>.
+        
+
 
         <h2>Community Apps for Life Cycle Assessment (LCA)</h2>
         <!--
@@ -202,15 +203,13 @@ crossorigin=""></script>
 
       <div>
           Companies like Amazon and General Motors are using the US Environmentally Extended Input-Output <a href="https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-models">(USEEIO) Models</a> to analyze economic and environmental impacts across all economic sectors 
-          for community planning, business development and environmental education using interactive interfaces like the <a href="https://www.epa.gov/smm/sustainable-materials-management-prioritization-tools">Sustainable Materials Management Prioritization Tools</a>. 
+          for community planning, business development and environmental education using interactive interfaces like the <a href="https://www.epa.gov/smm/sustainable-materials-management-prioritization-tools">Sustainable Materials Management Prioritization Tools</a> and the upcoming <a href="../../localsite/info/">Industry Evaluator</a>. 
           The new online tools foster informed decisions while creating connections that turn waste streams into revenue streams to lower the cost of material input during production. 
           <br>
 
-          <h2>Upcoming Events and Internships</h2>
-          During the summer of 2020, Georgia communities are participating in our Life Cycle App Ideas Challenge to set objectives and priorities. 
-          Georgia Tech interns are updating modules for local and regional analysis. 
-          In the Fall of 2020, we'll expand on the new community tools during the Code for America <a href="../challenge">Sustainable Communities Web Challenge</a> which will provide $10,000 in awards. 
-          <a href="../challenge" style="white-space: nowrap">Learn More and Register</a>.<br><br>
+          <h2>Upcoming Events</h2>
+          In the Spring of 2021, we'll expand on the EPA's new tools during the Code for America <a href="../challenge">Sustainable Communities Web Challenge</a>.<br><br>
+          
 
           <b>What's new:</b><br>
           <!--
@@ -269,6 +268,12 @@ crossorigin=""></script>
         <li>Increase socio-economic benefits; and </li>
         <li>Increase the capacity of state and local governments, communities and key stakeholders to adopt and implement SMM policies, practices and incentives.</li>
         </ol>
+        <br>
+
+        “We cannot avoid the shift away from fossil fuels, the question is the timing and how it is done. If people don’t trust in the future, if they cannot see themselves with security, see opportunity, they are going to fight it. We have to make sure people move out of those areas in a way that builds hope, with as little damage as possible.”<br><br>
+
+        - Sharan Burrow, head of the International Trade Union Confederation
+
       </div>
 
     </div>
@@ -362,10 +367,13 @@ crossorigin=""></script>
 
       <a href="https://model.earth/io/charts/">View our new embeddable US EEIO charts - Get Involved!</a><br>
 
-      The screenshot below is from the EPA's new Sustainable Materials Management <a href="https://www.epa.gov/smm/sustainable-materials-management-prioritization-tools">Prioritization Tool Suite</a> which uses the USEEIO model. Here's an <a href="../start/dataset/">IO Module Starter</a> generated from a CSV file output from the USEEIO API.<br><br>
+      The screenshot below is from the EPA's new Sustainable Materials Management <a href="https://www.epa.gov/smm/sustainable-materials-management-prioritization-tools">Prioritization Tool Suite</a> which uses the USEEIO model.<br><br>
 
-      <img src="../img/overview/heatmap.png" style="width:100%">
-      <br><a href="../resources/USEEIO/">How is this chart generated?</a>
+      <a href="../../io/build/industry_list.html?view=mosaic&count=50"><img src="../img/overview/heatmap.png" style="width:100%"></a>
+      <br>
+      <a href="../../io/build/industry_list.html?view=mosaic&count=50">View Latest Widget</a> | 
+      <a href="../resources/useeio/">How is this chart generated? (Python example)</a> | 
+      <a href="../start/dataset/">Layout Mockup</a> 
       <br><br>
 
       <style>
@@ -554,10 +562,10 @@ crossorigin=""></script>
     <div class="content contentpadding" style="margin-top:0px">
       <div>
         <h1 style="margin-bottom:0px">Recycling Processors (B2B)</h1>
-        <a href="https://data.georgia.org/#recycling" target="_parent">Additional Maps</a> - Landfills, Inert Waste, Transfer Stations
+        <a href="https://map.georgia.org/explore/#recycling" target="_parent">Additional Maps</a> - Landfills, Inert Waste, Transfer Stations
       </div><br><br>
 
-      <iframe class="block-map-directory cf" id="map_directory" src="https://data.georgia.org/site/widget.html#processors" style="width:100%;height:800px"></iframe>
+      <iframe class="block-map-directory cf" id="map_directory" src="https://map.georgia.org/explore/site/widget.html#processors" style="width:100%;height:800px"></iframe>
     </div>
   </section>
 
@@ -592,7 +600,7 @@ crossorigin=""></script>
       watch for taredown dates that fit your schedule.
       <br><br>
 
-      In addition, census data from <a href="https://uszipcode.readthedocs.io/01-Tutorial/index.html">uszipcode datasets</a>, will be combined with establishment and employment counts from the <a href="../industries">Complete ZIP Code Industry Detail Files</a> to model impacts using the <a href="https://github.com/usepa/useeio_api/wiki/Use-the-API">USEEIO API</a>.<br><br>
+      In addition, census data from <a href="https://uszipcode.readthedocs.io/01-Tutorial/index.html">uszipcode datasets</a>, will be combined with payroll, establishment and employment counts from <a href="../industries">zip code industry data</a> to visualize impacts using <a href="../../io/charts/">Embeddable IO widgets</a>.<br><br>
 
       <a href="../start/feed">Publish your Inventory and Wishlist Data</a>
       <br><br>
@@ -673,8 +681,8 @@ crossorigin=""></script>
     dp2.markerType = "google";
     dp2.listLocation = false;
 
-    param.show = "smart"; // Used by loadFromCSV which is called by loadMap1
-    loadMap1(dp2);
+    //param.show = "smart"; // Used by loadFromCSV which is called by loadMap1
+    loadMap1("smart", dp2);
 
     /*
     loadFromCSV('map1','map2', dp2, 0, function(results) {
