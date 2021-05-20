@@ -137,17 +137,24 @@ navigation.js has a conflict with reveal
           <a href="https://model.earth/community/challenge/"><img src="../img/overview/banner-1.png" style="width:270px;"></a>
         </div>
 
-        <b><a href="/" style="color:#555">Fostering Circular Economies</a></b>
+        <b><a href="/"><span class="siteTitleShort"></span><!--Fostering Circular Economies--></a></b>
         <br>
         
-        <h1 class="h1-home" style="margin-bottom: 0px"><span class="siteTitleShort"></span></h1>
+        <!--
+        siteTitleShort not populated when header omitted -->
+        <!-- move back into h1 tag below
+          <span class="siteTitleShort"></span>
+
+        For:
+        http://localhost:8887/community/tools/?showheader=false
+        -->
+
+        <h1 class="h1-home" style="margin-bottom: 0px">Sustainable Communities Web Challenge</h1>
         <br>
-
-        We are creating tools for viewing local changes across time with a focus on: What industries are currently in my community, on average how do these industries impact the environment, job creation, health, etc. and ultimately what courses of action can we take to positively effect these levels?<br><br>
-
         Created with the US EPA's new input-output model, the <span class="siteTitleShort"></span> website features&nbsp;maps and data visualizations  
-        that combine industry and environmental data using <a href="../../io/charts/">Embeddable&nbsp;IO&nbsp;Widgets</a>.
+        that combine industry and environmental data using <a href="../../io/charts/">Embeddable&nbsp;IO&nbsp;Widgets</a>.<br><br>
         
+        <a href="../../localsite/info/">Our Industry Comparison Tools</a> answer questions like: What are the top industries in my community? How do these industries impact air, water, land, energy use, job creation, health and prosperity? Where can we focus innovation for the greatest&nbsp;returns?
 
 
         <h2>Community Apps for Life Cycle Assessment (LCA)</h2>
@@ -204,13 +211,14 @@ navigation.js has a conflict with reveal
       </div>
 
       <div>
-          Companies like Amazon and General Motors are using the US Environmentally Extended Input-Output <a href="https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-models">(USEEIO) Models</a> to analyze economic and environmental impacts across all economic sectors 
-          for community planning, business development and environmental education using interactive interfaces like the <a href="https://www.epa.gov/smm/sustainable-materials-management-prioritization-tools">Sustainable Materials Management Prioritization Tools</a> and the upcoming <a href="../../localsite/info/">Industry Evaluator</a>. 
-          The new online tools foster informed decisions while creating connections that turn waste streams into revenue streams to lower the cost of material input during production. 
+          Companies like Amazon and General Motors are using the US Environmentally Extended Input-Output <a href="https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-models">(USEEIO) Models</a> to analyze economic and environmental impacts across all economic sectors.   
+          The model is available for community planning, business development and environmental education through our new <a href="../../localsite/info/">Local Industry Comparison Tools</a> and the <a href="https://www.epa.gov/smm/sustainable-materials-management-prioritization-tools">Sustainable Materials Management Prioritization Tools</a>. 
+          <!--
+          The new online tools foster informed decisions while creating connections that turn waste streams into revenue streams to lower the cost of material input during production. -->
           <br>
 
           <h2>Upcoming Events</h2>
-          In the Fall of 2021, we'll expand on the EPA's new tools during the Code for America <a href="../challenge">Sustainable Communities Web Challenge</a>.<br><br>
+          In the Fall of 2021, we'll implement the EPA's new tools for communities during the Code for America <a href="../challenge">Sustainable Communities Web Challenge</a>.<br><br>
           
 
           <b>What's new:</b><br>
@@ -248,7 +256,8 @@ navigation.js has a conflict with reveal
           -->
           <br><br>
 
-          <a href="../about/useeio">More about who's using the USEEIO modeling tool</a>
+          <a href="../about/useeio">More about who's using the USEEIO modeling tool</a><br>
+          <a href="https://model.earth/open-sustainable-technology/">Directory of open resources focused on sustainability</a>
           <br><br>
           
       </div>
@@ -301,10 +310,9 @@ navigation.js has a conflict with reveal
           <div id="hublist-padding">
             <h1 style="padding-bottom:0px; margin-bottom:0px">Data Driven Decision&nbsp;Making</h1>
 
+            <h3>In Q1 2021, Georgia became the first state to implement the <span style="white-space: nowrap">EPA's new Input-Output Model</span></h3>
             
-            <!--
-            <h2 style="font-size: 18px; margin-bottom:0px; font-weight: 600">Smart & Sustainable Movement of <span style="white-space: nowrap">Goods & Services</span></h2>
-            -->
+            
 
             <!--
             <a href="../start/feed" class="button">Add your data feeds</a>
@@ -314,15 +322,7 @@ navigation.js has a conflict with reveal
             value="Add your data feeds" style="margin-top:20px; padding:10px" />
             <br><br>
 
-            <!--
-            <h1 style="margin-bottom:0px">Sustainable Movement of Goods & Services</h1>
-            -->
-            <!-- Smart & Mobile -->
-
-            <!--
-            <h3 style="margin-top:0px; margin-bottom:20px; font-size: 1.24em;">Smart Georgia - Data Driven Decision Making</h3>
-            -->
-            <!--Opportunities for Waze integration:<br><br>-->
+            Developed with the assistance of <a href="../../io/team/">Georgia graduate students</a>, we're applying the Georgia input-output model to compare local industies in communities throughout the state, and in other states with <a href="https://codeforamerica.org">Code for America</a> brigades.  The following <a href="https://smartcities.gatech.edu/georgia-smart">Georgia Smart</a> communities will be among those with custom input-output profiles.<br><br>
 
 
             <!--
@@ -372,7 +372,7 @@ navigation.js has a conflict with reveal
     <div class="content contentpadding">
       <h1>Statewide Input-Output Modeling</h1>
 
-      <a href="https://model.earth/io/charts/">View our new embeddable US EEIO charts - Get Involved!</a><br>
+      <a href="../../io/charts/">View our new embeddable US EEIO charts - Get Involved!</a><br>
 
       The screenshot below is from the EPA's new Sustainable Materials Management <a href="https://www.epa.gov/smm/sustainable-materials-management-prioritization-tools">Prioritization Tool Suite</a> which uses the USEEIO model.<br><br>
 
@@ -604,7 +604,7 @@ navigation.js has a conflict with reveal
       <b>Example:</b> Your construction contract has a requirement to use 50% reclaimed lumber. 
       Share a spreadsheet documenting how much lumber you need and when you need it.  Groups like 
       the <a href="https://www.lifecyclebuildingcenter.org/">Lifecycle Building Center</a> retrieve lumber after film productions and can 
-      watch for taredown dates that fit your schedule.
+      watch for teardown dates that fit your schedule.
       <br><br>
 
       In addition, census data from <a href="https://uszipcode.readthedocs.io/01-Tutorial/index.html">uszipcode datasets</a>, will be combined with payroll, establishment and employment counts from <a href="../industries">zip code industry data</a> to visualize impacts using <a href="../../io/charts/">Embeddable IO widgets</a>.<br><br>
@@ -638,23 +638,23 @@ navigation.js has a conflict with reveal
   </style>
   <div id="footerBox" class="padding" style="">
     <div class="content contentpadding" style="padding-top:0px;">
-      <div id="partners" style="float:left; margin-right:65px">
-        <h2>Partners</h2>
+      <h2>Partners</h2>
 
+      <div id="partners" style="float:left; margin-right:65px">
+        
         <img src="../img/logo/epa.png" style="width:100px; float:left; margin-right: 20px">
         <img src="../img/logo/georgia.png" style="width:120px; float:left; margin-top: -4px; margin-left:3px; margin-right:-5px">
         <img src="../img/logo/gatech.png" style="width:120px; float:left; margin-top: 24px; margin-left:-5px">
       </div>
 
       <div style="float:left;">
-        <h2>Get Involved</h2>
 
         <div style="line-height:2">
           <a href="https://codeforamerica.org/">Code for America</a> &ndash; Participate with your local community.<br>
 
           <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> &ndash; Join our virtual meetings every two weeks.<br>
 
-          <a href="https://GitHub.com/modelearth/community/">Edit on GitHub</a> &ndash; Contribute to community tools and datasets.<br>
+          <a href="https://GitHub.com/localsite/localsite/">GitHub Repos</a> &ndash; Contribute to community tools and datasets.<br>
 
           <a href="../../io/team/">Meet Our Team</a> &ndash; Contributors from US EPA, GDEcD and Georgia Tech.<br>
 
@@ -671,7 +671,7 @@ navigation.js has a conflict with reveal
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
-<script type="text/javascript" src="../../localsite/js/map.js"></script>
+<script type="text/javascript" src="../../localsite/js/map.js?show=smart"></script>
 <script>
 
     // MAP 1
@@ -689,7 +689,7 @@ navigation.js has a conflict with reveal
     dp2.listLocation = false;
 
     //param.show = "smart"; // Used by loadFromCSV which is called by loadMap1
-    loadMap1("smart", dp2);
+    loadMap1("community/tools", "smart", dp2);
 
     /*
     loadFromCSV('map1','map2', dp2, 0, function(results) {
